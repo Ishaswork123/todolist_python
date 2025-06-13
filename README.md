@@ -10,4 +10,6 @@ The user should be able to:
 6.List all tasks that are in progress
 
 a two file in practice.py a simple practice code of crude operation while second proper working form of to-do list 
+here is the url of project description 
+https://roadmap.sh/projects/task-tracker 
 
