@@ -100,28 +100,28 @@ elif(press_key == '4'):
     x=collect_todo.find()
     for i in x:
         print(i)
-    name_task= input('enter a name of task which can be marked')
+    name_task= input('enter a name of task which can be marked\n')
     markTask(name_task)
 elif(press_key == '5'):
      x=collect_todo.find()
      for i in x:
         print(i)
-     name_1= input("name the task which you want to delete")
+     name_1= input("name the task which you want to delete\n")
      x=collect_todo.delete_one({'name': name_1})
-     print('delete successfully')
+     print('delete successfully \n\n')
      listAll()
 elif(press_key == '6'):
     
      x=collect_todo.find()
      for i in x:
         print(i)
-     name_old=input('enter a name of task you want to update')
+     name_old=input('enter a name of task you want to update\n')
 
      des=input('enter updated descriptiom ')
      oldquery={'name' : name_old }
      newquery= {'$set': {'description': des , 'UpdatedAt': datetime.now()}}
      x=collect_todo.update_one(oldquery,newquery)
-     print('updated Successfully')
+     print('updated Successfully\n\n')
      listAll()
     
 else:
