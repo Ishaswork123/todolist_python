@@ -20,7 +20,7 @@ mycol= mydb['p1']
 dict_2={"_id": 16 , "name" : "alveena" , "timestamp" : True}
 dict_3={"_id": 20 , "name" : "ahmer" , "CreatedAt" : datetime.utcnow(),"UpdatedAt": 'null'}
 
-z=mycol.insert_one(dict_3)
+# z=mycol.insert_one(dict_3)
 
 # first occurnance 
 z=mycol.find_one()
@@ -70,12 +70,12 @@ for i in x:
   print(i)
   
 print("enter a name and descriptionm")
-name_1= input("enter a name\n")
-des= input("enter a description")
+# name_1= input("enter a name\n")
+# des= input("enter a description")
 
-mydict_4= {'_id':34 , 'name' : name_1 , 'description' : des  }
+# mydict_4= {'_id':34 , 'name' : name_1 , 'description' : des  }
 
-g= mycol.insert_one(mydict_4)   
+# g= mycol.insert_one(mydict_4)   
 
 x= mycol.find()
 for i in x:
